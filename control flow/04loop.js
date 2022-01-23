@@ -1,9 +1,18 @@
 /// Soal - 01
 /// Kamu diminta untuk membuat sebuah perulangan menggunakan for loop, untuk mencetak angka prima dari 1 ~ 100
 /// EDIT HERE
-for (a=1; a* a<=100; a++) { 
-    if (a % 1 ===0){
-        
+for (let a = 1; a <= 100; a++) {
+    let angka1 = 0;
+
+    for (let b = 2; b < a; b++) {
+        if (a % b == 0) {
+            angka1 = 1;
+            break;
+        }
+    }
+
+    if (a > 1 && angka1 == 0) {
+        console.log(a);
     }
 }
 
