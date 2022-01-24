@@ -1,0 +1,33 @@
+/// Soal - 01
+/// Kamu diminta untuk menjelaskan apa perbedaan antara
+/// - Type Error
+/// - Reference Error
+/// - Range Error
+/// - Syntax Error
+
+/// WRITE YOUR ANALYSIS HERE
+Jawab :
+- Type Error terjadi ketika memanggil sesuatu misalnya function yang sebenarnya bukan function atau undefined
+atau tidak ditemukan.
+- Reference error terjadi ketika nilainya tidak ada dalam jangkauan scope
+- Range Error terjadi ketika ada angka/nilai sebagai sebuah argumen pada function yang tidak berada pada jangkauan
+angka tersebut
+- Syntax error terjadi ketika javascript menguraikan kode dan menemukan kesalahan kode yang tidak valid.
+
+
+/// Soal - 02
+/// Kamu diminta untuk melakukan analisa terhadap baris kode dibawah dengan instruksi detail sebagai berikut:
+/// - apabila kita menjalankan baris kode dibawah apa yang akan terjadi?
+/// - apabila terjadi error, termasuk dalam kategori manakah error tersebut?
+/// - apabila terjadi error, jelaskan mengapa hal tersebut bisa terjadi
+
+/// WRITE YOUR ANALYSIS HERE
+console.log(salaryWithVar)
+console.log(salaryWithConst)
+
+var salaryWithVar = 15000000;
+const salaryWithConst = 15000000;
+
+- undefined 
+- Reference error
+- karena variablenya dipanggil duluan dengan console.log sebelum diperkenalkan dengan var dan const
