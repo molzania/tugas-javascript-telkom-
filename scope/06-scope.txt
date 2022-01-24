@@ -16,9 +16,6 @@ function scope berarti variabel yang di dalam function tidak bisa diakses di lua
 /// - apa yang akan tampil didalam comsole.log ?
 /// - apa alasan yang menyebabkan hasil dari console itu bukan nilai dari variable name?
 
-/// Jawab:
-- console.log adalah untuk menulis pesan logs ke console. tujuannya untuk testing.
-- fungsinya lebih ke mencetak pesan yang berisi variabel untuk ditunjukkan kepada user. 
 ///
 const name = "John Watson";
 
@@ -28,4 +25,6 @@ function printFirstName(name) {
 
 console.log(printFirstName("Mariah Carey"));
 
-jawab : Mariah;
+jawab : 
+- Mariah 
+- karena di console log yang dipanggil name yang terdapat dalam function print first name 
