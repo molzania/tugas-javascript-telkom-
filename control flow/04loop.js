@@ -46,8 +46,8 @@ do {
  } while (n == 50)
 
  do { 
-    for(n=1, n<=100, 2n-1){
-         console.log(n);
+    for(o=1, o<=100, 2o-1){
+         console.log(o);
          return true;
-    }
-  } while (n == 50)
+    };
+  } while (o == 50)

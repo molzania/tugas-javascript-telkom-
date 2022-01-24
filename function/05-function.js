@@ -69,8 +69,6 @@ function checkBMI(height, weight) {
  console.log(checkBMI(160,80))
 
 
-
-
 /// Soal - 03
 /// Buatlah sebuah fungsi yang akan merubah huruf pertama disetiap kata menjadi huruf besar
 
