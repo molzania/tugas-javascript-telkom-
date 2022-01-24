@@ -23,7 +23,12 @@ let primeCounter = 0;
 let fiftiethPrime;
 
 /// EDIT HERE
-while (....) {}
+while (fiftiethPrime < 230) {
+    for(e=1; e<=230; e++) {
+        let primeCounter = 0;
+        break;
+    }
+}
 
 
 /// Soal - 03
@@ -32,4 +37,17 @@ let oddCounter = 0;
 let fiftiethOdd;
 
 /// EDIT HERE
-do { .... } while (....)
+do { 
+ if(n % 1 == 0){
+     return true;
+ } else {
+     return false
+ }
+ } while (n == 50)
+
+ do { 
+    for(n=1, n<=100, 2n-1){
+         console.log(n);
+         return true;
+    }
+  } while (n == 50)
