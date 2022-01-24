@@ -16,13 +16,13 @@
 /// EDIT HERE
 function taxCalc(salary) { 
     if(salary < 5000000) {
-        return (0/100) * salary;
-    } else if (5000000 <= salary < 10000000) {
-        return (5/100) * salary;
-    } else if (10000000 <= salary < 20000000) {
-        return (10/100) * salary;
+        return 0 * salary;
+    } else if (salary >= 5000000 && salary < 10000000) {
+        return (5*salary)/100;
+    } else if ( salary >= 10000000 && salary < 20000000) {
+        return  (10*salary)/100;
     } else if (salary >= 20000000) {
-        return (20/100) * salary;
+        return (20*salary)/100;
     }
  }
  console.log(taxCalc(4500000));
@@ -51,14 +51,14 @@ function taxCalc(salary) {
 /// EDIT HERE
 
 function checkBMI(height, weight) { 
-    const bmi = (weight/(height^2)) * 10000;
+    let bmi = (weight/(height**2)) * 10000;
     if(bmi < 18.5) {
         console.log("under weight");
-    } else if(18.5 < bmi < 24.5){
+    } else if(bmi > 18.5 && bmi < 24.9){
         console.log("normal");
-    } else if(25< bmi < 29.9) {
+    } else if(bmi > 25 && bmi < 29.9) {
         console.log("over weight");
-    } else if(30 < bmi < 34.9) {
+    } else if(bmi > 30 && bmi < 34.9) {
         console.log("obese");
     } else {
         console.log("extremely obese");
@@ -66,7 +66,7 @@ function checkBMI(height, weight) {
  }
 
  console.log(checkBMI(170, 80));
- console.log(checkBMI(160,80))
+ console.log(checkBMI(160,80));
 
 
 /// Soal - 03
@@ -101,4 +101,15 @@ console.log(convToUpperCase("helloworldwide"));
 /// (String) huruf yang pertama kali tidak ada kembarannya
 
 /// EDIT HERE
-function firstNonRepeatedChar(word) { .... }
+function firstNonRepeatedChar(word) {     
+    const seenBefore = new Set();
+    let result = "_";
+    for (let i = word.length; i--;) {
+      const letter = word.charAt(i);
+      if (seenBefore.has(letter)) continue;
+      seenBefore.add(letter);
+      result = letter;
+    }
+    return result;}
+
+console.log(firstNonRepeatedChar("alloha"));

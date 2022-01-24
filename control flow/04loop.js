@@ -23,10 +23,20 @@ let primeCounter = 0;
 let fiftiethPrime;
 
 /// EDIT HERE
-while (fiftiethPrime < 230) {
-    for(e=1; e<=230; e++) {
+while (fiftiethPrime == 50) {
+    for (let c = 1; c <= 100; c++) {
         let primeCounter = 0;
-        break;
+    
+        for (let d = 2; d < c; d++) {
+            if (c % d == 0) {
+                primeCounter = 1;
+                break;
+            }
+        }
+    
+        if (c > 1 && primeCounter == 0) {
+            console.log(c);
+        }
     }
 }
 
@@ -51,3 +61,7 @@ do {
          return true;
     };
   } while (o == 50)
+
+  do {
+      if()
+  }
