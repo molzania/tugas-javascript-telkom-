@@ -1,0 +1,29 @@
+/// Soal - 01
+/// Kita sudah belajar mengenai variable scope yang dimiliki oleh Javascript
+/// dan kamu diminta untuk merangkum tentang:
+/// - ada berapa banyak jumlah variable scope pada Javascript?
+/// - jelaskan secara singkat setiap variable scope yang dimiliki oleh Javascript
+/// - buatlah implementasi sederhana dari tiap-tiap variable scope yang dimiliki oleh Javascript
+
+/// Jawab :
+- Ada 3 yaitu; block scope, function scope, global scope.
+- Blocks adalah code yang berada didalam curly braces {}.
+Global scope berarti variabel yang kita buat dapat diakses dimanapun dalam suatu file.
+function scope berarti variabel yang di dalam function tidak bisa diakses di luar function.
+
+/// Soal - 02
+/// Kamu diminta untuk melakukan analisa terhadap baris kode dibawah ini
+/// - apa yang akan tampil didalam comsole.log ?
+/// - apa alasan yang menyebabkan hasil dari console itu bukan nilai dari variable name?
+
+/// Jawab:
+- console.log adalah untuk menulis pesan logs ke console. tujuannya untuk testing.
+- fungsinya lebih ke mencetak pesan yang berisi variabel untuk ditunjukkan kepada user. 
+///
+const name = "John Watson";
+
+function printFirstName(name) {
+  return name.split(" ")[0];
+}
+
+console.log(printFirstName("Mariah Carey"));
