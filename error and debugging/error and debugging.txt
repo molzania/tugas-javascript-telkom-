@@ -30,4 +30,4 @@ const salaryWithConst = 15000000;
 
 - undefined 
 - Reference error
-- karena variablenya dipanggil duluan dengan console.log sebelum diperkenalkan dengan var dan const
+- karena variablenya dipanggil duluan dengan console.log sebelum dideklarasikan dengan var dan const
