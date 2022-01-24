@@ -63,5 +63,5 @@ do {
   } while (o == 50)
 
   do {
-      if()
-  }
+      
+  } while ()
