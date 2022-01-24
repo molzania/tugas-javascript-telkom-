@@ -27,3 +27,5 @@ function printFirstName(name) {
 }
 
 console.log(printFirstName("Mariah Carey"));
+
+jawab : Mariah;
