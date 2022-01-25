@@ -101,16 +101,22 @@ console.log(convToUpperCase("helloworldwide"));
 /// (String) huruf yang pertama kali tidak ada kembarannya
 
 /// EDIT HERE
-function firstNonRepeatedChar(word) {     
-    const seenBefore = new Set();
-    let result = "_";
-    for (let i = word.length; i--;) {
-      const letter = word.charAt(i);
-      if (seenBefore.has(letter)) continue;
-      seenBefore.add(letter);
-      result = letter;
+const firstNonRepeatedChar = (word) => {
+
+    if(word.includes(' ')) {
+        console.log("kata tidak boleh diipisah");
+    } else {
+        if(word) {
+            for (var i = 0; i < word.length; i++) {
+                var c = word.charAt(i);
+                if (word.indexOf(c) == i && word.indexOf(c, i + 1) == -1) {
+                  return c;
+                }
+              }
+              return null;
+        }
     }
-    return result;}
+}
 
 console.log(firstNonRepeatedChar("alloha"));
 console.log(firstNonRepeatedChar("hello world"));
