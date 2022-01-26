@@ -21,10 +21,12 @@ console.log(document.querySelector("#card-04"));
 // const card3 = document.querySelector("#card-03");
 // const card4 = document.querySelector("card-04");
 
+//Soal nomor 4
 const clickhandler=function(e){
     let modal=document.querySelector('.modal-body');
         modal.querySelector('img').src=this.querySelector('img').src;
         modal.querySelector('p[data-id="modal-text"]').innerHTML=this.querySelector('p.card-text').innerHTML;
+        modal.querySelector('h5[data-id="modal-title"]').innerHTML=this.querySelector('h5.card-title').innerHTML;
         modal.classList.toggle('open');
         modal.addEventListener('click',function(e){this.classList.remove('open')})
   };
