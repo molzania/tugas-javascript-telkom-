@@ -171,12 +171,42 @@
       elBtnComment.addEventListener('click', function(){
     elCommentSection.classList.remove("d-none");});
 
-// Soal 2
+// Soal 2 & 3
  
-elBtnSubmit.addEventListener('submit', (event) => {
+elBtnSubmit.addEventListener('click', (event) => {
     event.preventDefault();
+    console.log(elInputUsername.value, elInputComment.value)
 })
 
+//Soal 4
+
+var addCommentList = document.createElement("li").appendChild(elCommentList);
+    addCommentList.classList.add("list-group-item", "d-flex", "justify-content-between", "align-items-start");
+    console.log(addCommentList.elCommentList);
+
+var divAddCommentList = document.createElement("div").appendChild(addCommentList);
+divAddCommentList.classList.add("ms-2", "me-auto");
+console.log(divAddCommentList);
+
+var divFwBold = document.createElement("div").appendChild(divAddCommentList);
+divFwBold.classList.add("fw-bold", "text-capitalize");
+console.log(divFwBold);
+
+divFwBold.innerHTML = "Firsty Ukhti Molyndi";
+divAddCommentList.innerHTML = "Saya suka programming";
+
+
+
+elCommentList.addEventListener('change', function(){
+    elCommentSection.classList.add("d-none");});
+
+    
+
+
+
+
+
+    
     </script>
   </body>
 </html>
