@@ -23,24 +23,17 @@ let primeCounter = 0;
 let fiftiethPrime;
 
 /// EDIT HERE
-while (fiftiethPrime == 50) {
-    for (let c = 1; c <= 100; c++) {
-        let primeCounter = 0;
-    
-        for (let d = 2; d < c; d++) {
-            if (c % d == 0) {
-                primeCounter = 1;
-                break;
+while(primeCounter <= 50)
+    {
+        for (let primeCounter = 1; primeCounter <= 100; primeCounter++) {
+            let primeCounter = 0;
+        
+            if (primeCounter > 1 && primeCounter == 0) {
+                console.log(a);
             }
         }
-    
-        if (c > 1 && primeCounter == 0) {
-            console.log(c);
-        }
+        
     }
-}
-
-
 
 /// Soal - 03
 /// Kamu diminta untuk menemukan bilangan ganjil ke-50, temukan bilangan tersebut menggunakan do while loop
@@ -48,21 +41,9 @@ let oddCounter = 0;
 let fiftiethOdd;
 
 /// EDIT HERE
-do { 
- if(n % 1 == 0){
-     return true;
- } else {
-     return false
- }
- } while (n == 50)
-
- do { 
-    for(o=1, o<=100, 2o-1){
-         console.log(o);
-         return true;
-    };
-  } while (o == 50)
-
-  do {
-      
-  } while ()
+ 
+do{ 
+    let oddCounter = 0
+    console.log(oddCounter);
+     (2*oddCounter)-1;
+}while(oddCounter<=100);
