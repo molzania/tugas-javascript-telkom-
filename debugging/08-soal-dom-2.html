@@ -180,25 +180,31 @@ elBtnSubmit.addEventListener('click', (event) => {
 
 //Soal 4
 
-var addCommentList = document.createElement("li").appendChild(elCommentList);
+var addCommentList = document.createElement("li");
     addCommentList.classList.add("list-group-item", "d-flex", "justify-content-between", "align-items-start");
-    console.log(addCommentList.elCommentList);
+    console.log(addCommentList);
 
-var divAddCommentList = document.createElement("div").appendChild(addCommentList);
+var divAddCommentList = document.createElement("div");
 divAddCommentList.classList.add("ms-2", "me-auto");
 console.log(divAddCommentList);
 
-var divFwBold = document.createElement("div").appendChild(divAddCommentList);
-divFwBold.classList.add("fw-bold", "text-capitalize");
-console.log(divFwBold);
+var divAddName = document.createElement("div");
+divAddName.classList.add("fw-bold", "text-capitalize");
+console.log(divAddName);
 
-divFwBold.innerHTML = "Firsty Ukhti Molyndi";
-divAddCommentList.innerHTML = "Saya suka programming";
+elCommentList.appendChild(addCommentList);
+addCommentList.appendChild(divAddCommentList);
+divAddCommentList.appendChild(divAddName);
 
 
+divAddName.innerHTML = 'Firsty Ukhti Molyndi';
+divAddCommentList.innerHTML = "Saya suka kopi";
+
+
+//Soal 7
 
 elCommentList.addEventListener('change', function(){
-    elCommentSection.classList.add("d-none");});
+      elCommentList.classList.add("d-none");});
 
     
 
