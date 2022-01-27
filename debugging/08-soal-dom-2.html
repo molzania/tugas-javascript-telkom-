@@ -197,14 +197,14 @@ addCommentList.appendChild(divAddCommentList);
 divAddCommentList.appendChild(divAddName);
 
 
-divAddName.innerHTML = 'Firsty Ukhti Molyndi';
-divAddCommentList.innerHTML = "Saya suka kopi";
+divAddName.innerHTML = 'James Bond';
+divAddCommentList.append("I like coffee");
+
 
 
 //Soal 7
 
-elCommentList.addEventListener('change', function(){
-      elCommentList.classList.add("d-none");});
+elCommentList.className = 'list-group list-group-flush overflow-auto d-none';
 
     
 

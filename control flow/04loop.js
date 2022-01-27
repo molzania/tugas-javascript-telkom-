@@ -23,16 +23,9 @@ let primeCounter = 0;
 let fiftiethPrime;
 
 /// EDIT HERE
-while(primeCounter <= 50)
+while(primeCounter <= fiftiethPrime)
     {
-        for (let primeCounter = 1; primeCounter <= 100; primeCounter++) {
-            let primeCounter = 0;
-        
-            if (primeCounter > 1 && primeCounter == 0) {
-                console.log(a);
-            }
-        }
-        
+  
     }
 
 /// Soal - 03
