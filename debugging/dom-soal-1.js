@@ -39,3 +39,4 @@ const clickhandler=function(e){
 
 document.querySelectorAll('.card').forEach( div=>div.addEventListener('click',clickhandler));
 
+

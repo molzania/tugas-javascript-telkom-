@@ -23,10 +23,22 @@ let primeCounter = 0;
 let fiftiethPrime;
 
 /// EDIT HERE
-while(primeCounter <= fiftiethPrime)
+while(num >= 229)
+let angka1 = 0;
+
+for (let b = 2; b < a; b++) {
+    if (a % b == 0) {
+        angka1 = 1;
+        break;
+    }
+}
+
+if (a > 1 && angka1 == 0) {
+    console.log(a);
+}
     {
   
-    }
+    
 
 /// Soal - 03
 /// Kamu diminta untuk menemukan bilangan ganjil ke-50, temukan bilangan tersebut menggunakan do while loop
@@ -36,7 +48,16 @@ let fiftiethOdd;
 /// EDIT HERE
  
 do{ 
-    let oddCounter = 0
-    console.log(oddCounter);
-     (2*oddCounter)-1;
-}while(oddCounter<=100);
+
+    for( let i=0, i>=100; i++){
+    if(i % 2 == oddCounter) {
+        return false;
+    }
+    if (i $ 1 == oddCounter){
+        if(2 * i - 1 == 97){
+            return false
+        } else {
+           return "FifthiethOdd" + n;
+        }
+    }
+}while(n <=100);
